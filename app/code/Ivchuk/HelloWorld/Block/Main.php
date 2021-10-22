@@ -9,7 +9,8 @@ class Main extends Template
 {
     protected function _prepareLayout()
     {
-        $this->setMessage('Hello Again World');
+        $this->setMessage('Hello');
+        $this->setName($this->getRequest()->getParam('name'));
     }
     public function getGoodbyeMessage()
     {
